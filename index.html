@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz App</title>
+    <meta charset="utf-8" name="description" content="Alexi's Simple Calculus Quiz!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="media.css" type="text/css">
+
+</head>
+
+<body>
+
+    <main class="container" role="main">
+
+        <!-- START MENU -->
+        <header id="startMenu" class="hideStartMenu" role="heading">
+            <h1 style="text-align: center;">Welcome! Click Start to Take the Quiz!</h1>
+        </header>
+
+        <hr style="margin-top: 25px" class="hideStartMenu">
+
+        <section class="startContainer hideStartMenu" >
+            <button id="startButton" class="hideStartMenu" role="navigation">
+                <span id="startTxt">Start</span>
+            </button>
+        </section>
+
+        <hr style="margin-top: 50px" class="hideStartMenu">
+
+        <!-- END OF START MENU -->
+
+        <!-- THIS SECTION WILL BE HIDDEN DURING START MENU  IT IS ALSO THE QUESTIONS TAB-->
+        <div class="tempHidden" role="heading">
+            <h1 style="text-align: center">Question
+                <span id="questionHeader">1</span>
+            </h1>
+        </div>
+
+        <hr style="margin-top: 25px; margin-bottom: 50px;" class="tempHidden">
+
+        <section class="tempHidden">
+            <aside id="questionTxt"></aside>
+            <aside id="resultPrompt" style="display: none;"></aside>
+        </section>
+    
+        <form class="tempHidden startContainer questionContainer buttons" role="menu">
+            <button id="button1" class="tempHidden questionButtons" type="button" role="menuitem">
+                <span id="choice1 "></span>
+            </button>
+            <button id="button2" class="tempHidden questionButtons" type="button" role="menuitem">
+                <span id="choice2 "></span>
+            </button>
+            <button id="button3" class="tempHidden questionButtons" type="button" role="menuitem">
+                <span id="choice3 "></span>
+            </button>
+            <button id="button4" class="tempHidden questionButtons" type="button" role="menuitem">
+                <span id="choice4 "></span>
+            </button>
+        </form>
+
+        <hr style="margin-top: 25px" class="tempHidden">
+
+        <footer class="tempHidden" role="contentinfo">
+            <p id="counter" class="footerArea" style="padding-right: 17.5%;" role="progressbar">Question
+                <span id="questionCount">1</span> of 6</p>
+            <p class="footerArea" style="padding-right: 23%" role="progressbar"> Correct:
+                <span class="correctCounter">0</span> Incorrect:
+                <span class="incorrectCounter">0</span>
+            </p>
+            <button id="nextButton" class="footerArea disabledButton" disabled="disabled">Next
+            </button>
+        </footer>
+
+        <!-- END OF HIDDEN -->
+
+        <!-- THIS SECTION WILL BE THE RESULTS, HIDDEN UNTIL QUIZ IS COMPLETED -->
+        <header style="text-align: center" role="heading">
+            <h1 id="resultsHeader" class="resultsView">RESULTS</h1>
+        </header>
+
+        <p class="resultsView resultsCss" style="text-align: center" role="status">You got
+            <span class="correctCounter"></span> correct and
+            <span class="incorrectCounter"></span> incorrect out of a total of 6!
+        </p>
+
+        <form style="text-align: center" role="navigation">
+            <button id="restartButton" class="resultsView" type="reset">
+                <span id="restartTxt">Restart Quiz!</span>
+            </button>
+        </form>
+        <!-- END OF RESULTS HTML -->
+
+    </main>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

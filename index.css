@@ -1,0 +1,148 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+/* STYLING FOR THE QUIZAPP */
+body{
+    background-color: ghostwhite;
+    opacity: 0.4;
+}
+
+.tempHidden{
+    display: none;
+}
+
+#questionTxt{
+    font-size: 25px;
+    height: 50px;
+    display: inline-block;
+    padding-right: 180px;
+    padding-left: 20px;
+}
+
+#resultPrompt{
+    font-size: 25px;
+    height:50px;
+    display: inline-block;
+    border: 2px 2px 2px 2px black;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    box-shadow: 10px 15px 5px;
+}
+
+.startContainer{
+    width: 100%;
+    text-align: center;
+}
+
+#startButton{
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 60px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#startButton:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.text
+{
+    color: white;
+}
+
+.tempHidden{
+    display: none;
+}
+
+#button1, #button2, #button3, #button4{
+    white-space: nowrap;
+    line-height: 0.5em;
+    width: 250px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    background-color: chocolate;
+    border: 2px solid black;    
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    font: 15px;
+    height: 38px;
+    padding: 30px;
+}
+
+#button1:hover, #button2:hover, #button3:hover, #button4:hover{
+    background-color: rgb(5, 95, 110);
+    cursor: pointer;
+}
+
+#counter{
+    font: 20px;
+    color: black;
+}
+
+.footerArea{
+    display: inline-block;
+}
+
+#nextButton{
+    color: white;
+    text-shadow: 1px 1px 1px #888;
+    background-color: #001a00;
+    border-radius: 10px;
+    border-color: black;
+}
+
+#nextButton:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+.resultsView{
+    display: none;
+}
+
+#resultsHeader{
+    text-align: center;
+    font-size: 40px;
+}
+
+.resultsCss{
+    text-align: center;
+    font-size: 25px;
+}
+
+#restartButton{
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(207, 14, 14);
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 60px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#restartButton:hover{
+    cursor: pointer;
+    background-color: rgb(119, 8, 8);
+}
+
+#restartTxt, #startTxt{
+    text-shadow: 2px 2px 1px black;
+}

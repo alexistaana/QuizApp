@@ -1,0 +1,153 @@
+/* Viewport is at most 800 pixels wide */
+@media only screen and (max-width: 171px){
+
+    .container{
+        width: 30%;
+    }
+
+    h1{
+        font-size: 100% !important;
+    }
+
+    #restartButton, #startButton, #button1, #button2, #button3, #button4{
+        width: 100%;
+        font-size: 100%;
+        padding: 0px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    #questionTxt{
+        font-size:100%;
+        padding: 0px;
+    }
+
+    #resultPrompt{
+        font-size: 90%;
+        padding: 0px;
+    }
+}
+
+/* Viewport is at least 173 pixels wide */
+@media only screen and (min-width: 173px){
+
+    #resultsHeader{
+        font-size: 100%;
+    }
+
+    .container{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 100%;
+    }
+
+    #restartButton, #startButton, #button1, #button2, #button3, #button4{
+        width: 100%;
+        font-size: 100%;
+    }
+
+    #questionTxt{
+        font-size:100%;
+        padding: 0px;
+    }
+    #resultPrompt{
+        font-size: 90%;
+        padding: 0px;
+    }
+}
+
+
+/* Viewport is at least 259 pixels wide */
+@media only screen and (min-width: 259px){
+
+    #resultsHeader{
+        font-size: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    .container{
+        width: 60%;
+    }
+
+    #restartButton, #startButton{
+        width: 100%;
+        font-size: 2em;
+    }
+}
+
+
+/* VIEWPORT IS AT LEAST 350 PIXELS WIDE */
+@media only screen and (min-width: 350px){
+
+    #resultsHeader{
+        font-size: 25px;
+    }
+
+
+    #button1, #button2, #button3, #button4 {
+        margin: 10px 40px 10px 0px;
+        width: 200px;
+    }
+
+    #resultPrompt, #questionTxt{
+        font-size: 25px;
+    }
+}
+
+/* Viewport is at least 646 pixels wide */
+@media only screen and (min-width: 646px){
+
+    .container{
+        width: 70%;
+    }
+
+    #restartButton, #startButton{
+        width: 100%;
+    }
+
+    #button1, #button2, #button3, #button4 {
+        margin: 10px 40px 10px 0px;
+    }
+}
+
+/* Viewport is at least 800 pixels wide */
+@media only screen and (min-width: 800px) {
+
+    .container {
+        height: 570px;
+    }
+
+    #nextButton{
+        width: 16%;
+    }
+
+    #resultPrompt{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    #questionTxt{
+        padding-right: 0px;
+    }
+
+}
+
+/* Viewport is at least 1145 pixels wide */
+@media only screen and (min-width: 1145px) {
+
+    .container {
+        height: 540px;
+    }
+
+    #nextButton{
+        width: 16%;
+    }
+
+    #questionTxt{
+        padding-right: 0px;
+    }
+}
